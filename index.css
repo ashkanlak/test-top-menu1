@@ -82,20 +82,19 @@ div[id="lest_menu"]{
     div[id="free"]{
         display:none;
     }
+    /*                         منو هبرگری                      */
+
     div[id="lest_menu"]:not(#background_lest){
         display: flex;
         justify-content:center;
         flex-direction:column;
         align-items: center;
         width:1.8rem;
-        height:1.7rem;
+        height:1.8rem;
         margin-left:1rem;
     }
-
-    /*                         منو هبرگری                      */
-
     div[class="lest"]{
-        margin:0.3rem;
+        margin:0.18rem;
         background-color: rgb(255, 255, 255);
         width:1.5rem;
         height:0.20rem;
@@ -104,25 +103,24 @@ div[id="lest_menu"]{
     #lest_style_3{
         height:0.22.5rem;  
     }
-    a[id="clec_lest"]:hover #lest_style_2{
+    div[id="lest_menu"]:hover #lest_style_2{
         transform:rotate(45deg);
-        margin-top:-1.044rem;
         height:0.25rem;
+        transition-duration:0.7s;
     }
-    a[id="clec_lest"]:hover #lest_style_1{
+    div[id="lest_menu"]:hover #lest_style_1{
         transform:rotate(-45deg);
-        margin-bottom:0.8rem;
+        margin-bottom:-0.75rem;
         height:0.25rem;
+        transition-duration:0.5s;
     }
-    a[id="clec_lest"]:hover #lest_style_3{
+    div[id="lest_menu"]:hover #lest_style_3{
         opacity:0;
-
     }
-
     div[id="lest_menu"]:not(#background_lest){
         transition-duration:0.5s;
     }
-    a[id="clec_lest"]:hover #lest_menu:not(#background_lest){
+    div[id="lest_menu"]:hover :not(#background_lest){
         margin-top:0.5rem;
     }
     div[class="lest"]{
@@ -131,7 +129,7 @@ div[id="lest_menu"]{
 
     div[id="background_lest"]{
         position: absolute;
-        top:2.6rem;
+        top:2.8rem;
         background-color: #3f37c9;
         display:flex;
         align-items: center;
